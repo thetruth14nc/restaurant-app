@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation | Pone'Smokin</title>
+    <link rel="stylesheet" href="style_refactored.css" />
+</head>
+
+<body>
+
+    <!-- Header & Navigation-->
+    <header>
+        <img src="images/logo.png" alt="Pone'Smokin logo" class="logo" />
+        <h1>Make a Reservation</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Reservation Form -->
+    <main>
+        <section class="reservation-form container mt-5">
+            <h2>Reserve Your Table</h2>
+            <form id="reservation">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required />
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com"
+                        required />
+                </div>
+
+                <div class="mb-3">
+                    <label for="date" class="form-label">Date:</label>
+                    <input type="date" id="date" name="date" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                    <label for="time" class="form-label">Time:</label>
+                    <input type="time" id="time" name="time" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                    <label for="guests" class="form-label">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" class="form-control" min="1" max="20" placeholder="2"
+                        required />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Book Now</button>
+                <div id="reservation-response" class="alert d-none mt-3"></div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 ">
+        <p class="mb-0">&copy; 2024 Pone'Smokin</p>
+    </footer>
+
+    <script src="js/reservation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
