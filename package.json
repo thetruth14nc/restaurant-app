@@ -1,18 +1,21 @@
 {
   "name": "restaurant-app",
   "version": "1.0.0",
-  "main": "script.js",
+  "description": "A Node.js restaurant reservation app",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "restaurant",
+    "nodejs",
+    "express",
+    "reservation"
+  ],
+  "author": "Job Leath",
   "license": "ISC",
   "dependencies": {
-    "cor": "^0.0.0",
     "cors": "^2.8.5",
     "express": "^5.1.0"
-  },
-  "description": ""
+  }
 }
